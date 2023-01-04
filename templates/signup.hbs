@@ -38,7 +38,7 @@
         button{
             background: #5F0103;
             color: white;
-            width: 245px;
+            width: 100%;
             height: 40px;
             font-weight: 600;
             letter-spacing: 0.5px;
@@ -48,12 +48,11 @@
             opacity: 0.9;
         }
         .form{
-            height: 430px;
+            min-height: 430px;
             width: 300px;
             border: white solid 1px;
             border-radius: 10px;
-            padding-left: 50px;
-            padding-top: 27px;
+            padding: 27px 50px 27px 50px;
         }
         p{
             font-size: small;
@@ -66,9 +65,10 @@
             font-weight: 900;
         }
         input{
-            width: 230px;
+            width: 100%;
             height: 30px;
-            padding-left: 8px;
+            padding: 8px;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -82,11 +82,11 @@
                 <label for="email">Email</label> <br>
                 <input name="email" placeholder="Username@gmail.com" type="text"><br><br>
                 <label for="password">Password</label> <br>
-                <input name="password" placeholder="Password" type="text"><br><br>
+                <input name="password" placeholder="Password" type="password"><br><br>
                 <label for="confirm-password">Confirm Password</label> <br>
-                <input name="confirmPassword" placeholder="Confirm Password" type="text"><br><br>
+                <input name="confirmPassword" placeholder="Confirm Password" type="password"><br><br>
                 <button>Signup</></button> <br> <br>
-                <p>Allready have an Account? <span>Sign IN</span></p>
+                <a href="/signin"><p>Allready have an Account? <span>Sign IN</span></p></a>
             </form>
         </div>
         <div class="right">
